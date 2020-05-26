@@ -17,7 +17,8 @@ header += 1
 
 while True:
     try:
-        Text += '        ' + str(sentence) + ', ' + input('Sentence: ') + '\n'
+        Text += '        ' + str(sentence) + '. ' + input('Sentence: ') + '\n'
+        sentence += 1
     except KeyboardInterrupt:
         Command = input('L for new Lesson, H for new header, Q for quit: ').lower()
         if Command == 'l':
